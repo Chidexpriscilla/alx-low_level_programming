@@ -1,1 +1,1 @@
-my first c programe
+about C programming
