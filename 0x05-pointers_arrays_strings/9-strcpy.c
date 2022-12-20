@@ -1,37 +1,22 @@
-#include"main.h"
-
-
-
 /**
+ * _strcpy - copies a string from one pointer to another
+ *	including the terminating null byte (\0)
+ * @src: source of string parameter input
+ * @dest: destination of string
  *
- *  * _puts - prints a string, followed by a newline to stdout
- *
- *   *
- *
- *    * @str: string parameter to print
- *
- *     *
- *
- *      * Return: Nothing
- *
- *       */
+ * Return: pointer to dest input parameter
+ */
 
-
-
-void _puts(char *str)
-
+char *_strcpy(char *dest, char *src)
 {
+	int a, b = 0;
 
-		while (*str != '\0')
+	for (a = 0; src[a] != '\0'; ++a)
+	{
+		dest[b] = src[a];
+		++b;
+	}
+	dest[b] = '\0';
 
-				{
-
-							_putchar(*str + 0);
-
-									++str;
-
-										}
-
-			_putchar('\n');
-
+	return (dest);
 }
